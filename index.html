@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <main>
+    <section class="calculator">
+      <section class="calculator__section calculator__header">
+        <h1 class="calculator__title">calc</h1>
+        <div class="calculator__states">
+          <span class="states__title">THEME</span>
+          <div class="states__selector">
+            <div class="selector__toggle">
+              <input class="toggle__dot" type="radio" name="checkToggle" id="toggle1" hidden checked>
+              <label class="toggle__label" for="toggle1">
+                <div class="toggle__circle">1</div>
+              </label>
+              <input class="toggle__dot" type="radio" name="checkToggle" id="toggle2" hidden>
+              <label class="toggle__label" for="toggle2">
+                <div class="toggle__circle">2</div>
+              </label>
+              <input class="toggle__dot" type="radio" name="checkToggle" id="toggle3" hidden>
+              <label class="toggle__label" for="toggle3">
+                <div class="toggle__circle">3</div>
+              </label>
+            </div>
+            <input class="selector__range" type="range" max="2" value = "0">
+          </div>
+        </div>
+      </section>
+      <input class="calculator__section calculator__input" type="text" placeholder="0" maxlength="15" readonly>
+      <section class="calculator__section calculator__buttons">
+        <button class="btn btn__number">7</button>
+        <button class="btn btn__number">8</button>
+        <button class="btn btn__number">9</button>
+        <button class="btn btn__del">DEL</button>
+        <button class="btn btn__number">4</button>
+        <button class="btn btn__number">5</button>
+        <button class="btn btn__number">6</button>
+        <button class="btn btn__operator" value="+">+</button>
+        <button class="btn btn__number">1</button>
+        <button class="btn btn__number">2</button>
+        <button class="btn btn__number">3</button>
+        <button class="btn btn__operator" value="-">-</button>
+        <button class="btn btn__number">.</button>
+        <button class="btn btn__number">0</button>
+        <button class="btn btn__operator" value="/">/</button>
+        <button class="btn btn__operator" value="*">x</button>
+        <button class="btn btn__reset">RESET</button>
+        <button class="btn btn__equal">=</button>
+      </section>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ulises Paz</a>.
+  </footer>
+  <script src = "app/app.js" ></script>
+</body>
+</html>
